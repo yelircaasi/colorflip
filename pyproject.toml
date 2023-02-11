@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "swytchswatch"
+version = "0.0"
+description = "Color swatch management tool - designed for the author, but potentially useful to others."
+authors = ["Isaac Riley <isaac.r.riley@gmail.com>"]
+maintainers = ["Isaac Riley <isaac.ririley@gmail.com>"]
+license = "GPL"
+readme = "README.md"
+packages = [{ include = "swytchswatch", from = "src" }]
+include = [{ path = "tests", format = "sdist" }]
+homepage = "https://github.com/yelircaasi/swytchswatch"
+repository = "https://github.com/yelircaasi/swytchswatch"
+documentation = "https://github.com/yelircaasi/swytchswatch"
+keywords = ["command-line-utilities", "color-themes"]
+classifiers = [
+    "Topic :: Software Development :: System :: Installation/Setup",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Utiilities"
+]
+
+#[tool.poetry.urls]
+# add Reddit post when I make it
+
+[tool.poetry.build]
+generate-setup-file = false
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.10"
+dynaconf = "^3.1.11"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.21.0"
+black = "^23.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+#pytest-cov = "^4.0"
+#pytest-mock = "^3.9"
+#pytest-randomly = "^3.12"
+#pytest-xdist = { version = "^3.1", extras = ["psutil"] }
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.0"
+#types-html5lib = ">=1.1.9"
+#types-jsonschema = ">=4.9.0"
+#types-requests = ">=2.28.8"
+#typing-extensions = { version = "^4.0.0", python = "<3.8" }
