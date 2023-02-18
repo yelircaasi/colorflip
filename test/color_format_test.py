@@ -1,6 +1,6 @@
 import pytest
 
-from swytchswatch.utils.color_format import ColorCode
+from colorflip.utils.color_format import ColorCode
 
 
 @pytest.mark.parametrize(

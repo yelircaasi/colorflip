@@ -1,0 +1,71 @@
+[prehooks]
+
+
+[posthooks]
+
+[themes]
+  catpuccin_latte =     "./themes/catpuccin-latte.toml"
+  catpuccin_frappe =    ".themes/catpuccin-frappe.toml"
+  catpuccin_macchiato = ".themes/catpuccin-macchiato"
+  catpuccin_mocha =     "./themes/catpuccin-mocha.toml"
+  darcula =             "./themes/darcula.toml"
+  gruvbox =             "./themes/gruvbox.toml"
+  dynaconf_docs_dark =  "./themes/dynaconf-docs-dark.toml"
+  julia_docs_dark =     "./themes/dynaconf-docs-dark.toml"
+  nushell_docs_dark =   "./themes/dynaconf-docs-dark.toml"
+  poetry_docs_dark =    "./themes/dynaconf-docs-dark.toml"
+  schwarzwald =         "./themes/dynaconf-docs-dark.toml"
+  solarized_dark =      "./themes/solarized-dark.toml"
+  solarized_light =     "./themes/solarized-light.toml"
+
+[apps]
+
+  [apps.neovim]
+  config_file = "@format {env[XDG_CONFIG_HOME]/nvim/..."
+  pluginfile = "..."
+
+  [apps.zathura]
+  config_file = "@format {env[XDG_CONFIG_HOME]/zathura/..."
+  color_format = ""
+
+  [apps.vifm]
+  config_file= "@format {env[XDG_CONFIG_HOME]/vifm/..."
+  color_format = ""
+
+  [apps.qutebrowser]
+  config_file = "@format {env[XDG_CONFIG_HOME]/qutebrowser/..."
+  color_format = ""
+
+  [apps.alacritty]
+  config_file = "@format {env[XDG_CONFIG_HOME]/alacritty/alacritty.yaml"
+  color_format = ""
+
+  [apps.gnome]
+
+
+  [apps.xmonad]
+
+
+  [apps.xmobar]
+
+
+  [apps.picom]
+
+
+  [apps.taskell]
+  [apps.taskwarrior]
+
+
+  [chromefox.youtube_enhancer]
+
+
+  [chromefox.stylish]
+
+
+    [firechrome.stylish.wikipedia]
+
+
+    [firechrome.stylish.github]
+
+
+    [firechrome.stylish.teams]

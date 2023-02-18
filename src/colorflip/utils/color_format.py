@@ -53,10 +53,16 @@ class ColorCode:
     def as_0x(self, uppercase=True) -> str:
         return self._to_hex(self.rgb, "0x", uppercase)
 
-    def as_octo(self, uppercase=True) -> str:
+    def as_html(self, uppercase=True) -> str:
         return self._to_hex(self.rgb, "#", uppercase)
 
-    def as_parens(self, return_type: Union[str, tuple] = str, with_opacity=False) -> tuple:
+    def as_rgb(self, return_type: Union[str, tuple] = str, with_opacity=False) -> Union[str, tuple]:
         if with_opacity:
             return return_type((*self.rgb, 1 if self.opacity is None else self.opacity))
         return return_type(self.rgb)
+
+    def as_hsl():
+        ...
+
+    def as_cmyk():
+        ...
