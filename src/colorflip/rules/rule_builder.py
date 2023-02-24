@@ -10,7 +10,7 @@ from .callable_builders import (
 from .rules_class import Rule
 
 
-def build_rule(app_name: str, cfg_obj: Dynaconf):
+def build_rule(app_name: str, cfg_object: Dynaconf):
     """ """
     backup_callable = BackupCallable(cfg_object)
     editor_callable = EditorCallable(cfg_object)

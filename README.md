@@ -32,7 +32,33 @@ This project was written by the author for himself, so use at your own risk.
 
 ### Websites
 
-.
+* [Wikipedia](https://wikipedia.org)
+* Github
+* Stack Overflow
+* Reddit
+* Confluence
+* Bitbucket
+* Read the Docs
+* Hugging Face
+* PyPI
+* .
+* Jira
+* Gitlab
+* YouTube
+* Twitter
+* Goodreads
+* [Notion](https://notion.com)
+* [Google Drive](https://)
+* Google Sheets
+* Google Docs
+* Microsoft Teams
+* Dive into Deep Learning
+* Rosetta Code
+* Python Docs
+* Julia Docs
+* Rosetta Code
+* The Algorithms
+* Stanford Sites
 
 ### Terminal-Based Utilities
 
@@ -53,15 +79,50 @@ configuration in `./examples/example_user_config.toml`, which is declared in the
 
 ## Installation
 
-```sh
+Follow the webdriver installation instructions from Selenium. For example (version numbers will change,
+but this is illustrates the overall process):
 
+```sh
+# browser drivers
+cd /tmp
+wget https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+mv chromedriver ~/.local/bin
+wget https://github.com/mozilla/geckodriver/releases/download/v0.32.2/geckodriver-v0.32.2-linux64.tar.gz
+tar -xf geckodriver-v0.32.2-linux64.tar.gz
+mv geckodriver ~/.local/bin
+wget https://msedgedriver.azureedge.net/110.0.1587.50/edgedriver_linux64.zip
+unzip edgedriver_linux64.zip
+mv msedgedriver ~/.local/bin
 ```
 
 ## Command-Line Usage
 
+### Run full process end-to-end
+
 ```sh
-colorflip
+colorflip flip [PATH_TO_CONFIG_TOML]
 ```
+
+### Create new style sheets
+
+```sh
+colorflip generate [PATH_TO_CONFIG_TOML]
+```
+
+### Back up current configs, saving them in .colorflip/history folder (default under $HOME) for ease of reversion
+
+```sh
+colorflip backup [PATH_TO_CONFIG_TOML]
+```
+
+### Revert to earlier color scheme
+
+```sh
+colorflip revert [PATH_TO_CONFIG_TOML]
+```
+
+Each command has the option `--log LOG_LEVEL`
 
 ## Development Roadmap
 
@@ -71,4 +132,4 @@ colorflip
    [link2](https://jrwalk.github.io/pages/projects/python-cli-utilities-poetry-typer)
    1. write script
    2. define script installation in TOML
-   3. .
+   3. prototype selenium

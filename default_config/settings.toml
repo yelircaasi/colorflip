@@ -3,6 +3,9 @@
 
 [posthooks]
 
+[paths]
+tmp_root = "/tmp"
+
 [themes]
   catpuccin_latte =     "./themes/catpuccin-latte.toml"
   catpuccin_frappe =    ".themes/catpuccin-frappe.toml"
@@ -55,17 +58,53 @@
   [apps.taskell]
   [apps.taskwarrior]
 
+[extensions]
+  [extensions.chrome.youtube_enhancer]
 
-  [chromefox.youtube_enhancer]
+  [extensions.chrome.xstyles]
+
+  [extensions.chrome.stylus]
+
+  [extensions.edge.youtube_enhancer]
+
+  [extensions.edge.xstyles]
+
+  [extensions.edge.stylus]
+
+  [extensions.firefox.youtube_enhancer]
+
+  [extensions.firefox.xstyles]
+
+  [extensions.firefox.stylus]
 
 
-  [chromefox.stylish]
+[sites]
+  [sites.all]
+  notion = "notion.so"
+  teams = ""
+  github = ""
+  reddit = ""
+  discord = ""
+  codeberg = ""
+  gitlab= ""
+  stackoverflow = ""
+  stackexchange= ""
+  confluence = ""
+  bitbucket = ""
+  jira = ""
+  youtube = "" # override extension css?
+  wikipedia = ""
+  wikiquote= ""
+  wikisource = ""
+  gsheets = ""
+  gdocs = ""
+  d2l = "d2l.ai"
+  readthedocs = ""
+  rosettacode = ""
+  thealgorithms = ""
 
+  [sites.chrome]
 
-    [firechrome.stylish.wikipedia]
+  [sites.edge]
 
-
-    [firechrome.stylish.github]
-
-
-    [firechrome.stylish.teams]
+  [sites.firefox]
